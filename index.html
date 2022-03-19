@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,30 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" type="module"></script>
   <title>Document</title>
+
+  <script>
+    function toggleEllipsis() {
+      var element = document.getElementById("ellipsis-ex");
+      element.classList.toggle("text-truncate");
+    }
+  </script>
 </head>
+
 <body>
   <button>Show Toast</button>
+  <h1>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi doloremque quidem voluptas exercitationem ipsum.
+    Quos, officia, totam magni maiores veniam debitis doloribus quibusdam numquam qui eveniet nobis, odio magnam
+    dolorum!
+  </h1>
+
+  <div id="myDiv">
+    <span id="ellipsis-ex" class="text-truncate" onclick="toggleEllipsis()">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quae pariatur odio consequuntur. Distinctio dicta
+      maiores quasi corrupti optio ratione, adipisci illo doloremque quos asperiores tempore possimus nisi tenetur
+      porro?
+    </span>
+  </div>
 </body>
+
 </html>

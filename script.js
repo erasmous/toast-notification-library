@@ -1,4 +1,4 @@
-import Toast from "./Toast.js"
+import Toast from "./Toast.js";
 
 document.querySelector("button").addEventListener("click", () => {
   const toast = new Toast({
@@ -6,5 +6,5 @@ document.querySelector("button").addEventListener("click", () => {
     position: "top-right",
     pauseOnHover: true,
     pauseOnFocusLoss: true,
-  })
-})
+  });
+});
